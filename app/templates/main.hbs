@@ -1,0 +1,22 @@
+<article class="container">
+    {{#each this.model as |main|}}
+        <div class="restaurant">
+            <h3>{{main.title}}</h3>
+            <div class="address">
+                <span>Adres:</span> {{main.address}}
+            </div>
+            <div class="hours">
+                <span>Godziny otwarcia:</span> {{main.hours}}
+            </div>
+            <div class="phone">
+                <span>Telefon:</span> {{main.phone}}
+            </div>
+      {{!-- <div class="button-link">
+        {{#link-to "{{main.link}}" class="button"}}
+            Pizzeria Warszawa
+        {{/link-to}}
+      </div> --}}
+        </div>
+ 
+    {{/each}}
+ </article>

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgrey;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background: black;
+    height: 80px;
+}
+
+a {
+    color: inherit;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.hamburger-line {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
+    background: pink;
+}
+
+.hidden {
+    display: none;
+}
+
+.restaurant {
+    
+    background: white;
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+}
