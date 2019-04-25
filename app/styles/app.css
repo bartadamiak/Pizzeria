@@ -6,6 +6,8 @@
 
 body {
     background: lightgrey;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 .container {
@@ -14,9 +16,14 @@ body {
     margin: 0 auto;
 }
 
+.red {
+    color: rgb(255,0,0)
+}
+
 .header {
     background: black;
     height: 80px;
+    padding: 0 10px;
 }
 
 a {
@@ -26,6 +33,7 @@ a {
 .logo {
     color: white;
     text-decoration: none;
+    /* font-family: "Roboto", sans-serif; */
 }
 
 .page-header {
@@ -41,6 +49,10 @@ a {
     margin: 6px 0;
 }
 
+.hamburger {
+    cursor: pointer;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -54,9 +66,9 @@ a {
 }
 
 .restaurant {
-    
+    border: 1px solid rgb(255,0,0);
     background: white;
     margin: 20px;
     padding: 50px;
-    text-align: center;
+    text-align: left;
 }
