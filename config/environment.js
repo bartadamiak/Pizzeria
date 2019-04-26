@@ -6,6 +6,7 @@ module.exports = function(environment) {
       'Open+Sans:300,400,700',
       'Roboto:300',
       'Raleway:300,400,700',
+      'Oswald:300,400,700'
 
     ],
 
@@ -14,6 +15,7 @@ module.exports = function(environment) {
       'font-src': "'self' fonts.gstatic.com",
       'style-src': "'self' fonts.googleapis.com"
     },
+    
     modulePrefix: 'pizzeria-manager',
     environment,
     rootURL: '/',

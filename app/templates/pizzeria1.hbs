@@ -1,1 +1,31 @@
-{{outlet}}
+<div class="restaurant-site container">
+
+    <h2 class="restaurant-name">Pi<span class="red">z</span>zeria Warsz<span class="red">a</span>wa</h2>
+
+    <div class="boxes">
+        <div class="menu box">
+            <h4>Menu</h4>
+    
+    {{#each this.model as |menu|}}
+        <div class="menu-list">
+            <div class="menu-row">
+                <p>
+                    {{menu.pizza}}
+                </p>
+                <p>
+                    {{menu.price}}
+                </p>
+            </div>
+            
+            
+           
+        </div>
+ 
+    {{/each}}
+    
+    
+</div>
+        
+    </div>
+
+</div>
