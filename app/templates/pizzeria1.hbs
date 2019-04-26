@@ -6,25 +6,35 @@
         <div class="menu box">
             <h4>Menu</h4>
     
-    {{#each this.model as |menu|}}
-        <div class="menu-list">
-            <div class="menu-row">
-                <p>
-                    {{menu.pizza}}
-                </p>
-                <p>
-                    {{menu.price}}
-                </p>
-            </div>
+            {{#each this.model as |menu|}}
+                <div class="menu-list">
+                    <div class="menu-row">
+                        <p>
+                            {{menu.pizza}}
+                        </p>
+                        <p>
+                            {{menu.price}}
+                        </p>
+                        
+                    </div>
+                    <div class="ingredients">{{menu.ingredients}}</div>
             
             
            
-        </div>
+                </div>
  
-    {{/each}}
+            {{/each}}
     
     
-</div>
+        </div>
+        <div class="stock box">
+            <Stock/>
+        
+        </div>
+
+        <div class="order box">
+            <h4>Zamówienie</h4>
+        </div>
         
     </div>
 

@@ -99,6 +99,8 @@ a {
 
 .boxes {
     width: 100%;
+    display: flex;
+    justify-content: space-around;
 
 }
 
@@ -107,6 +109,8 @@ a {
     width: 33.33333%;
     /* height: 300px; */
     border-radius: 15px;
+    border: none;
+    margin: 10px;
 }
 
 .menu-row {
@@ -124,4 +128,11 @@ a {
     display: inline-flex;
     text-transform: uppercase;
     
+}
+
+.ingredients {
+    padding: 0 10px;
+    font-size: 0.7em;
+    font-weight: 300;
+    text-transform: lowercase;
 }
