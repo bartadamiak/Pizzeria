@@ -58,7 +58,19 @@ a {
     flex-direction: column;
     border: 1px solid black;
     padding: 20px;
-    background: pink;
+    
+}
+.nav {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding: 20px;
+    z-index: 111111111111111;
+}
+
+.navi {
+    text-decoration: none;
 }
 
 .hidden {
@@ -145,20 +157,16 @@ a {
     padding: 10px;
     background: lightgreen;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .ingredient, .counter {
     text-align: center;
 };
 
-.summary-row {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0;
-    padding: 10px;
-    background: rgb(255,0,0);
-    border-radius: 15px;
-    
+@media (max-width: 500px) {
+    .boxes {
+        display: flex;
+        flex-direction: column;
+    }
 }
-
-
