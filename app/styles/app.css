@@ -120,6 +120,7 @@ a {
     padding: 10px;
     background: rgb(255,0,0);
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .menu-row p {
@@ -136,3 +137,28 @@ a {
     font-weight: 300;
     text-transform: lowercase;
 }
+
+.ingredient-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px;
+    background: lightgreen;
+    border-radius: 15px;
+}
+
+.ingredient, .counter {
+    text-align: center;
+};
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px;
+    background: rgb(255,0,0);
+    border-radius: 15px;
+    
+}
+
+

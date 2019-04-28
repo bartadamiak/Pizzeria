@@ -1,160 +1,91 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-    ingre: [{
-        ingre: "Ser żółty",
-        counter: 50
+    clicker(e) {
+        
+        let element = document.querySelector('.sum2');
+        element.classList.remove('hidden');
+        element.querySelector('.name').innerText = this.querySelector('.name').innerText;
+        element.querySelector('.price').innerText = this.querySelector('.price').innerText;
+
+    },
+    list: [{
+        name: "Pomidor",
+        counter: 1,
     },
     {
-        ingre: "Szynka",
-        counter: 20
+        name: "Rukola",
+        counter: 1
     },
     {
-        ingre: "Tuńczyk",
+        name: "Ser żółty",
+        counter: 4
+    },
+    {
+        name: "Szynka",
+        counter: 6
+    },
+    {
+        name: "Tuńczyk",
+        counter: 7
+    }, 
+    {
+        name: "Ogórki",
+        counter: 2
+    },
+    {
+        name: "Ser kozi",
         counter: 10
     },
     {
-        ingre: "Ogórki",
-        counter: 10,
+        name: "Ser owczy",
+        counter: 10
     },
     {
-        ingre: "Ser kozi",
-        counter: 7
+        name: "Ser pleśniowy",
+        counter: 10
     },
     {
-        ingre: "Ser owczy",
-        counter: 7
+        name: "Krewetki",
+        counter: 10
     },
     {
-        ingre: "Ser pleśniowy",
+        name: "Oliwki",
         counter: 3
     },
     {
-        ingre: "Krewetki",
-        counter: 2
-    },
-    {
-        ingre: "Oliwki",
-        counter: 2
-    },
-    {
-        ingre: "Papryka chili",
+        name: "Pieprz cayenne",
         counter: 1
     },
     {
-        ingre: "Pieprz cayenne",
-        counter: 0.5
-    },
-    {
-        ingre: "Pomidory",
-        counter: 20
-    },
-    {
-        ingre: "Czosnek",
+        name: "Papryka chilli",
         counter: 3
     },
     {
-        ingre: "Salami",
-        counter: 25
-    },
-    {
-        ingre: "Rukola",
-        counter: 1
-    },
-    {
-        ingre: "Jalapeno",
+        name: "Czosnek",
         counter: 2
     },
     {
-        ingre: "Fasola",
+        name: "Salami",
+        counter: 10
+    },
+    {
+        name: "Jalapeno",
+        counter: 5
+    },
+    {
+        name: "Fasola",
         counter: 2
     },
     {
-        ingre: "Bób",
+        name: "Bób",
         counter: 2
     },
     {
-        ingre: "Szpinak",
+        name: "Szpinak",
         counter: 2
     }
-]
-    // model() {
-    //     return [{
-    //         ingre: "Ser żółty",
-    //         counter: 50
-    //     },
-    //     {
-    //         ingre: "Szynka",
-    //         counter: 20
-    //     },
-    //     {
-    //         ingre: "Tuńczyk",
-    //         counter: 10
-    //     },
-    //     {
-    //         ingre: "Ogórki",
-    //         counter: 10,
-    //     },
-    //     {
-    //         ingre: "Ser kozi",
-    //         counter: 7
-    //     },
-    //     {
-    //         ingre: "Ser owczy",
-    //         counter: 7
-    //     },
-    //     {
-    //         ingre: "Ser pleśniowy",
-    //         counter: 3
-    //     },
-    //     {
-    //         ingre: "Krewetki",
-    //         counter: 2
-    //     },
-    //     {
-    //         ingre: "Oliwki",
-    //         counter: 2
-    //     },
-    //     {
-    //         ingre: "Papryka chili",
-    //         counter: 1
-    //     },
-    //     {
-    //         ingre: "Pieprz cayenne",
-    //         counter: 0.5
-    //     },
-    //     {
-    //         ingre: "Pomidory",
-    //         counter: 20
-    //     },
-    //     {
-    //         ingre: "Czosnek",
-    //         counter: 3
-    //     },
-    //     {
-    //         ingre: "Salami",
-    //         counter: 25
-    //     },
-    //     {
-    //         ingre: "Rukola",
-    //         counter: 1
-    //     },
-    //     {
-    //         ingre: "Jalapeno",
-    //         counter: 2
-    //     },
-    //     {
-    //         ingre: "Fasola",
-    //         counter: 2
-    //     },
-    //     {
-    //         ingre: "Bób",
-    //         counter: 2
-    //     },
-    //     {
-    //         ingre: "Szpinak",
-    //         counter: 2
-    //     }
-    // ]
-    // }
+
+    ],
+    
 });

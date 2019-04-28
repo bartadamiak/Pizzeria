@@ -1,22 +1,14 @@
 <h4>Składniki</h4>
 
-{{this.ingre.counter}}
+{{#each this.list as |stock|}} 
+    <div onclick={{clicker}} class="ingredient-row">
+        <p class="name">
+            {{stock.name}}
+        </p>
+        <p class="price">
+            {{stock.counter}} PLN
+        </p>
+    </div>
+    
 
-
-    {{!-- {{#each this.model as |stock|}}
-               
-                    
-                        <p>
-                            {{stock.ingre}}
-                        </p>
-                        <p>
-                            {{stock.counter}}
-                        </p>
-                        
-                
-            
-            
-           
-             
- 
-    {{/each}} --}}
+{{/each}}

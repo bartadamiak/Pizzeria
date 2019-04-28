@@ -1,0 +1,19 @@
+<h4>Menu</h4>
+
+
+    
+{{#each this.menu as |menu|}} 
+    <div onclick={{clicker}} class="menu-row">
+        <p class="name">
+            {{menu.pizza}}
+        </p>
+        <p class='price'>
+            {{menu.price}} PLN 
+        </p>
+    </div>
+    <div class="ingredients">{{menu.ingredients}}</div>
+   
+    
+
+{{/each}}
+
